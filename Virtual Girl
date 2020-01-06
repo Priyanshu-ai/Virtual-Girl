@@ -1,0 +1,66 @@
+class girl():
+    def __init__(self, name, figure, beautiful):
+        self.name = name
+        self.figure = figure
+        self.beautiful = beautiful
+
+    def sex(self):
+        if self.figure.lower() == "good" and self.beautiful.lower() == "true":
+            print("Yes! i am ready for sex")
+        else:
+            print("i am ugly, i can't do it !!")
+
+    def about(self):
+        t = {"fine", "good", "i am good"}
+        print("i am fine, how are you ")
+
+    def ask0(self):
+        t = {" i am fine", "fine", "good", "i am good","good"}
+        a = input("")
+        if a.lower() in t or "i am fine" in a.lower():
+            print("Nice to hear that")
+        else:
+            print("")
+
+    def hi(self):
+        print("hi,how are you")
+        girl0.ask0()
+
+    def me_horny(self):
+        print("Yeah!! i am feeling very horny...")
+
+    def user_horny(self):
+        print("yeah!! i am horney too..")
+    def yeah(self):
+        print(":-)")
+
+i=0
+a1 = {"how are you", "how are you doing", "how are you?", "how are you doing?"}
+
+a0 = input("Describe your girl's name :: ")
+a = input("describe your girl's figure(Good or Bad) :: ")
+b = input("describe your girl's beauty(True or False) :: ")
+girl0 = girl(a0, a, b)
+print(f'hey, i am {girl0.name}')
+while True:
+    c = str(input(""))
+    if "sex" in c:
+        girl0.sex()
+    elif c in a1 or "how are you" in c.lower():
+        girl0.about()
+        girl0.ask0()
+    elif "hello" in c or "hi" in c or "hey" in c:
+    	if i==0:
+    		girl0.hi()
+    	else:
+    		print("Hi, again")
+    elif "horny" in c:
+        if "am horny" in c.lower() or "am feeling horney" in c.lower():
+            girl0.user_horny()
+        else:
+            girl0.me_horny()
+    elif c.lower() == "yeah" or c.lower() == "yeah!!" or c.lower() == "yeah!" or c.lower() == "yeah!!!" or c.lower() == "yeah !" or c.lower() == "yeah !!!" or c.lower() == "yeah !!":
+        girl0.yeah()
+    else:
+        print("umm!! sorry i didn't know it .. :(")
+    i= i+1
